@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageId"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_property"
+        android:onClick="doPress"
+        android:text="@string/take_photo"
+        android:layout_below="@+id/imageId"/>
+
+    <EditText
+        android:id="@+id/textId"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_below="@+id/button"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:hint="type here"
+        android:background="#FFFFFF"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionDone"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:layout_below="@+id/textId"
+        android:id="@+id/trandlateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_property"
+        android:text="translate"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_below="@+id/trandlateButton"
+        android:id="@+id/translateTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/text_property"
+        android:padding="5dp"
+        android:textColor="#070707"
+        android:textIsSelectable="true"
+        android:visibility="invisible" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="copy"
+        android:src="@drawable/copy"
+        android:visibility="invisible" />
+
+
+
+</RelativeLayout>
